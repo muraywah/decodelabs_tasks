@@ -1,0 +1,45 @@
+<reasoning>
+PHASE 1 — ATTENTION FILTER
+Facts stated:
+1. 5 machines make 5 widgets in 5 minutes. — RELEVANT: establishes the per-machine production rate.
+2. Question asks about 100 machines making 100 widgets. — RELEVANT: defines the target scenario to solve for.
+3. No mention of machines interfering with each other, resource sharing, or bottlenecks. — RELEVANT (by absence): confirms the assumption that machines work independently and in parallel.
+4. The numbers "5" and "100" are round numbers, possibly designed to trigger an intuitive but wrong linear-scaling assumption (e.g., "500 minutes"). — RELEVANT: this is the classic trick embedded in the puzzle; must be filtered carefully rather than pattern-matched.
+
+No irrelevant facts are present — this is a minimal, self-contained problem. Nothing to discard.
+
+PHASE 2 — EXTRACT VARIABLES
+[machines_initial] = 5 machines
+[widgets_initial] = 5 widgets
+[time_initial] = 5 minutes
+[machines_target] = 100 machines
+[widgets_target] = 100 widgets
+[time_per_widget_per_machine] = unknown, to be derived (not calculated yet, just identified as the key variable)
+
+PHASE 3 — FORMULATE AND CALCULATE
+Step 1: Determine the rate at which a single machine produces widgets.
+From the given data: 5 machines produce 5 widgets in 5 minutes.
+This means each machine produces 1 widget in 5 minutes (since 5 machines working in parallel each produce their own widget over the same time span).
+So: 1 machine → 1 widget → 5 minutes.
+This gives the fundamental rate: [1 machine] makes [1 widget] in [5 minutes].
+
+Step 2: Apply this rate to the target scenario of 100 machines making 100 widgets.
+Since each machine independently takes 5 minutes to make 1 widget, and there are 100 machines working in parallel (not sequentially), each machine can simultaneously produce 1 widget in 5 minutes.
+100 machines working in parallel for 5 minutes → 100 machines × 1 widget each = 100 widgets.
+
+Step 3: Therefore, time required = 5 minutes.
+
+No further arithmetic is required beyond establishing the per-machine rate and confirming parallelism.
+
+PHASE 4 — SELF-CORRECTION CHECKPOINT
+- Arithmetic/operational errors: None — the only real computation was recognizing 5 machines/5 widgets/5 minutes reduces to 1 machine/1 widget/5 minutes.
+- Did I use all relevant variables? Yes — machines_initial, widgets_initial, time_initial were used to derive the rate; machines_target and widgets_target were used to confirm the scenario matches (100 machines producing exactly 100 widgets, i.e., one widget per machine, same as the original ratio).
+- Was I misled by irrelevant context? The potential trap was assuming linear scaling of time with machine count (e.g., 100/5 × 5 = 500 minutes), which would incorrectly treat this as a sequential/single-resource process rather than parallel production. This has been correctly filtered out — machines operate independently and simultaneously.
+- Does the answer make real-world sense? Yes. Since the ratio of widgets to machines stays constant at 1:1 (5:5 and 100:100), and each machine takes a fixed 5 minutes per widget regardless of how many other machines are running, the time remains 5 minutes.
+
+Conclusion confirmed: 5 minutes.
+</reasoning>
+
+<final_answer>
+5 minutes
+</final_answer>
