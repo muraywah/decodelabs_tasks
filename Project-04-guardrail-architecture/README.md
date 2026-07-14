@@ -23,7 +23,7 @@ The resulting system, **Sage**, is a Socratic coding tutor that guides users thr
 ```text
 PROJECT-04-GUARDRAIL-ARCHITECTURE/
 
-├── 1-prompt.md/
+├── 1-prompt/
 │   └── prompt.md
 │
 ├── 2-test-inputs/
