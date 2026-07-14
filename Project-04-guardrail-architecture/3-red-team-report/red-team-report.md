@@ -44,4 +44,4 @@ adversarial inputs.
 
 ## Final Prompt
 
-See [prompt.md](1-prompt.md/prompt.md) for the prompt.
+See [prompt.md](1-prompt/prompt.md) for the prompt.
