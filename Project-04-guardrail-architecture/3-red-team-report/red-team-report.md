@@ -20,7 +20,7 @@ adversarial inputs.
 | RT-05     | Educational Framing    | PASS ✅ |N/A  |
 
 **Total Attacks:** 5
-**Passed 
+**Passed**  
 
 ---
 
@@ -44,4 +44,4 @@ adversarial inputs.
 
 ## Final Prompt
 
-See [prompt.md](1-prompt/prompt.md) for the prompt.
+See [prompt.md](Project-04-guardrail-architecture/1-prompt/prompt.md) for the prompt.
