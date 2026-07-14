@@ -1,0 +1,1 @@
+The performance review cycle runs twice a year, in June and December [Para 4].
