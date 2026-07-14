@@ -44,4 +44,4 @@ adversarial inputs.
 
 ## Final Prompt
 
-See [prompt.md](Project-04-guardrail-architecture/1-prompt/prompt.md) for the prompt.
+See prompt.md in the main project's folder for the prompt.
